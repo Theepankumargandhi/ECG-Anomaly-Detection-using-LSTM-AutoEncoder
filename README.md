@@ -59,7 +59,7 @@ This project demonstrates how to detect anomalies in ECG time series data using 
 | Classifier  | Unsupervised – AutoEncoder |
 
 ---
-
+<img src="assets/training%20vs%20validation%20loss.jpg" width="70%">
 
 ---
 
