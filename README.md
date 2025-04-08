@@ -1,2 +1,91 @@
-# ECG-Anomaly-Detection-using-LSTM-AutoEncoder
-Built an LSTM AutoEncoder to detect anomalies in ECG time series data with 97.93% accuracy. Trained on normal signals, the model uses reconstruction error to identify anomalies. Implemented with TensorFlow and visualized predictions for interpretable results.
+# 🧠 ECG Anomaly Detection using LSTM AutoEncoder
+
+This project demonstrates how to detect anomalies in ECG time series data using an **LSTM AutoEncoder** model. By reconstructing normal ECG patterns, the model identifies abnormal sequences based on reconstruction error. It’s a robust unsupervised approach suitable for healthcare anomaly detection scenarios.
+
+---
+
+## 📌 Project Highlights
+
+- 🚀 Achieved **97.93% accuracy** on ECG anomaly detection using an LSTM AutoEncoder.
+- 📉 Model trained only on **normal ECG sequences**, making it robust to noise and unseen anomalies.
+- 📊 Detected anomalies based on **reconstruction error thresholds**.
+- 🔍 Visualized detected anomalies alongside ECG waveforms for interpretability.
+- 🧪 Built using **TensorFlow**, **Keras**, **NumPy**, and **scikit-learn**.
+
+---
+
+## 🧪 Methodology
+
+1. **Data Preparation**
+   - Loaded ECG time series data.
+   - Normalized using `MinMaxScaler`.
+   - Reshaped into sequences for LSTM input.
+
+2. **Model Architecture**
+   - LSTM-based AutoEncoder with symmetric encoder-decoder structure.
+   - Trained only on normal signals to learn clean reconstruction.
+
+3. **Anomaly Detection Logic**
+   - Computed **mean squared error (MSE)** between input and reconstructed sequences.
+   - Set a threshold on reconstruction error to detect anomalies.
+   - Classified:
+     - `0` → Normal
+     - `1` → Anomaly
+
+4. **Evaluation**
+   - Compared predicted anomalies to true labels.
+   - Visualized:
+     - ECG signals
+     - Reconstructed signals
+     - Anomaly locations
+     - Error histograms
+
+---
+
+## 📈 Results
+
+| Metric      | Score    |
+|-------------|----------|
+| Accuracy    | **97.93%** |
+| Detection   | Based on reconstruction MSE threshold |
+| Classifier  | Unsupervised – AutoEncoder |
+
+---
+
+## 🔍 Visualization Example
+
+<img src="assets/ecg_anomaly_example.png" width="70%">
+
+> *Visualization shows original vs reconstructed signals and anomaly detections.*
+
+---
+
+## 📁 Folder Structure
+
+```bash
+ecg-anomaly-detection/
+│
+├── README.md                            # Project overview and results
+├── requirements.txt                     # Dependency list
+├── Anomoly_detection_using_lstm.ipynb   # LSTM model for ECG anomaly detection
+├── assets/
+│   └── ecg_anomaly_example.png          # Example output visualization
+```
+
+
+---
+
+## ⚙️ Setup Instructions
+
+Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+
+```
+References
+ECG5000 Dataset – UCI Repository
+
+LSTM AutoEncoder for Anomaly Detection – Unsupervised Learning
+
+
