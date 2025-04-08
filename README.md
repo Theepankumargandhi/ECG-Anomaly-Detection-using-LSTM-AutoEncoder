@@ -14,10 +14,17 @@ This project demonstrates how to detect anomalies in ECG time series data using 
 
 ---
 
-### 📉 Training vs Validation Loss
+
+### Model Performance: Training vs Validation Loss
 
 <p align="center">
   <img src="assets/training_vs_validation_loss.jpg" width="70%">
+</p>
+
+### Reconstruction Error Distribution
+
+<p align="center">
+  <img src="assets/reconstruction_error_distribution.jpg" width="70%">
 </p>
 
 
