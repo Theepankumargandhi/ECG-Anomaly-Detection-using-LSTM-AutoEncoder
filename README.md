@@ -52,11 +52,6 @@ This project demonstrates how to detect anomalies in ECG time series data using 
 
 ---
 
-## 🔍 Visualization Example
-
-<img src="assets/ecg_anomaly_example.png" width="70%">
-
-> *Visualization shows original vs reconstructed signals and anomaly detections.*
 
 ---
 
